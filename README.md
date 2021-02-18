@@ -2,7 +2,7 @@
 
 ##### February 2021
 
-_I followed a short Next.js tutorial ([Fireship - Next.js Beginners Tutorial](https://www.youtube.com/watch?v=Sklc_fQBmcs)) and created a very basic app. I learnt a lot about Static Site Generation (SSG) v Server Side Rendering (SSR)._
+_I followed a short Next.js tutorial ([Fireship - Next.js Beginners Tutorial](https://www.youtube.com/watch?v=Sklc_fQBmcs)) and created a very basic app. I learnt a lot about Static Site Generation (SSG) v Server Side Rendering (SSR). I also created a dynamic route._
 
 ## Main Learning Points:
 
