@@ -1,34 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My First Next.js App
 
-## Getting Started
+##### February 2021
 
-First, run the development server:
+_I followed a short Next.js tutorial ([Fireship - Next.js Beginners Tutorial](https://www.youtube.com/watch?v=Sklc_fQBmcs)) and created a very basic app. I learnt a lot about Static Site Generation (SSG) v Server Side Rendering (SSR)._
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Main Learning Points:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- With client-side rendering, the browser is sent a HTML file with no rendered content. From there, the browser fetches the images, CSS files and finally JavaScript files. It then renders this content to the page to make it interactive. This rendering time can be slow and means that it takes much longer to reach the first page of content when the user first lands on the webpage. The content is also not reliably indexed by all search engines or read by social media link bots.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- Static Site Generation (sometimes known as pre-rendering) renders all the pages at build time. It's suited to sites where data doesn't change often and with a relatively small number of pages. Drawbacks are that data can become stale and it's harder to scale.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- Server-side rendering generates each page at request time. The HTML page is built each time it is requested by the user. It's good for apps where the data is changing a lot as it will always fetch the latest data on the server.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Incremental Static Generation is somewhere in between! It regenerates singles pages in the background whenever a new request comes in within a certain time interval.
 
-## Learn More
+- Server-side data fetching is the most valuable feature in Next. It allows us to fetch data and render HTML on the server. The benefits are that the end user gets rendered content quicker and the content can be reliably crawled by bots.
 
-To learn more about Next.js, take a look at the following resources:
+- The `api` directory in Next.js is a special part of Next used for setting up routs that will only apply to the server. It's a useful feature when you have work that needs to be done on the backend or if you want to expose an API for your end user.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Built with:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- HTML
+- CSS
+- JavaScript
+- React
+- Next.js
